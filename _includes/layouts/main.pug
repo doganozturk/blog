@@ -1,0 +1,10 @@
+doctype html
+html(lang="tr")
+    include partials/head
+    body
+        .container
+            include partials/header
+            main
+                | !{ content }
+            include partials/footer
+            include partials/scripts

@@ -4,5 +4,5 @@ title: Doğan Öztürk
 eleventyExcludeFromCollections: true
 ---
 section.post-summaries
-    each item in collections.all
+    each item in collections.all.slice(0).reverse()
         include ./_includes/partials/post-summary

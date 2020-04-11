@@ -1,8 +1,7 @@
 ---
-layout: main
+layout: post
 title: Decorator'leri Express.js Temel Konseptleri Üzerinden Anlamak
 description: ES6 ya da diğer adıyla ES2015, 17 Haziran 2015'te standart haline geldi. Öncesinde ve tabii o günden bu yana asıl adıyla ECMAScript, yaygın kullandığımız haliyle JavaScript, Web'in gittikçe artan ihtiyaçlarına cevap vermeye çalışıyor. Her sene dilin özüne yeni konseptler ve yapılar ekleniyor.
-prettyDate: 2 Ocak 2020
 date: 2020-01-02
 ---
 

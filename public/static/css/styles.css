@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
     /* COLORS */
     --bg-color: #EEE5E9;
@@ -15,6 +16,7 @@
     --max-width: 720px;
 }
 
+/* GENERAL */
 * {
     box-sizing: border-box;
 }
@@ -26,23 +28,32 @@ body {
 
 a {
     all: unset;
+    cursor: pointer;
+}
+a:hover {
+    opacity: 0.8;
 }
 
+/* BODY */
 body {
+    display: flex;
+    justify-content: center;
     color: var(--text-color);
     background-color: var(--bg-color);
     font-family: var(--font-family);
     font-weight: var(--font-weight-light);
 }
 
+/* CONTAINER */
 body > .container {
-    /*width: var(--max-width);*/
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 0 20px;
 }
 
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -61,10 +72,12 @@ body > .container {
     border-radius: 50%;
 }
 
+/* MAIN */
 .main {
     margin-top: 30px;
 }
 
+/* MAIN => POST-SUMMARIES */
 .main > .post-summaries {
 
 }
@@ -89,8 +102,23 @@ body > .container {
     line-height: 1.4;
 }
 
+/* POST */
+.post.markdown-body {
+    padding-top: 30px;
+    font-family: var(--font-family);
+}
+.post.markdown-body ul,
+.post.markdown-body ol {
+    list-style: disc;
+}
+.post.markdown-body hr {
+    height: 0.05em;
+    background-color: var(--title-color);
+}
+
+/* FOOTER */
 .footer {
-    margin-top: 20px;
+    margin-top: auto;
     margin-bottom: 10px;
 }
 .footer > .links {

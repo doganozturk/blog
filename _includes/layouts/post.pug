@@ -1,0 +1,9 @@
+doctype html
+html(lang="tr")
+    include ../partials/head
+    body
+        .container
+            main.post.markdown-body
+                | !{ content }
+            include ../partials/footer
+            include ../partials/scripts

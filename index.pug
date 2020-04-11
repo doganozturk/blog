@@ -1,7 +1,8 @@
 ---
 layout: main
 title: Doğan Öztürk
+eleventyExcludeFromCollections: true
 ---
-section(class="posts")
-    p POSTS
-
+section.post-summaries
+    each item in collections.all
+        include ./_includes/partials/post-summary

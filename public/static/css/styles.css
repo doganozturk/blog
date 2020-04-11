@@ -90,8 +90,8 @@ body > .container {
 }
 
 .footer {
-    margin-top: auto;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .footer > .links {
     display: flex;

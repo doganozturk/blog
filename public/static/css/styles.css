@@ -46,6 +46,7 @@ body {
 
 /* CONTAINER */
 body > .container {
+    width: 100%;
     max-width: var(--max-width);
     display: flex;
     flex-direction: column;
@@ -63,8 +64,14 @@ body > .container {
 .header > .title {
     align-self: flex-start;
     margin-top: 5px;
+}
+.header > .title > .name {
     font-size: 2em;
     font-weight: var(--font-weight-normal);
+}
+.header > .title > .info {
+    margin-top: 10px;
+    font-weight: var(--font-weight-light);
 }
 .header > .avatar {
     width: 100px;

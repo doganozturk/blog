@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Web Components'
+permalink: "/web-components/"
 description: Geliştirdiğimiz web ön-yüz projelerinde, özellikle de firma bazlı tüm departmanların gelişimine katkıda bulunduğu ve bakımını sağladığı styleguide’larınız yoksa; her yeni ürün ekleme süreci sonunda yeni button’lar, label’lar, form element’leri, modal’lar vb. geliştirmek durumunda kalındığı bir gerçek. Bu durum da bir süre sonra ön-yüz projelerinde karmaşıklığın yükselmesine ve geliştirme ve bakım maliyetlerinin artmasına sebep oluyor.
 date: 2019-06-17
 ---

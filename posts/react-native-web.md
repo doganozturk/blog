@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Cross-Platform Development: React-Native-Web'
+permalink: "/cross-platform-development-react-native-web/"
 description: Cross-Platform Development’a niyet ettiğinizde en çok karşılaşacağınız ve kafanızı karıştıracak soru bu olacak. Benim bu noktada kişisel kanaatim, Web Development kökenli bir yazılım geliştirici olma perspektifinden tabii, kararı tamamen ihtiyaçlarınıza göre vermeniz. Küçük ve orta ölçekli projeler için, özellikle uygulamalarınız harika animasyonlara yahut native platformun _cutting-edge_ özelliklerine bağımlı değilse Hybrid bir uygulama işinizi fazlasıyla görecektir diyebilirim; lakin istekleriniz ve yazılım geliştirme takımınızın kompozisyonu (örneğin hem mobil uygulama hem de web geliştiricilerin olduğu ve uyumlu çalışabilecekleri bir ortam) uygunsa native çözümlere yönelmeniz daha sağlıklı olacaktır.
 date: 2019-09-22
 ---

@@ -7,6 +7,7 @@ date: 2019-09-22
 ---
 
 # {{ title }}
+{{ page.date | prettyDate }}
 
 Güncel bir proje için fikrinizin tüm popüler platformlarda yer almasını istiyor olmanız son derece makul. Bu gerçekten hareketle bugün bir uygulama inşa etmeye ve kullanıcılarınızın karşısına çıkmaya karar verdiğinizde muhtemelen en az, üç popüler platformda yer almak zorundasınız.
 
@@ -20,18 +21,15 @@ Tabii her proje aynı rekabet imkanlarına ve gücüne sahip olamıyor. Ekibiniz
 
 İşte tüm bu unsurlar göz önünde bulundurulduğunda `Cross-Platform Development` bilişim projeleri için günümüzün kızıl elması, kutsal kasesi, El Dorado'sudur diyebiliriz. Zira tek bir geliştirme ortamı, tek bir codebase ve bu bağlamda yine ortak diğer süreçler ve çok daha düşük maliyetlerle projenizi/fikrinizi hayata geçirmenizi ve tüm yaygın kullanılan platformlarda varolmanızı sağlayan bir yazılım geliştirme konsepti `Cross-Platform Development`.
 
-Hybrid mi Native mi?
-====================
+## Hybrid mi Native mi?
 
 Cross-Platform Development’a niyet ettiğinizde en çok karşılaşacağınız ve kafanızı karıştıracak soru bu olacak. Benim bu noktada kişisel kanaatim, Web Development kökenli bir yazılım geliştirici olma perspektifinden tabii, kararı tamamen ihtiyaçlarınıza göre vermeniz. Küçük ve orta ölçekli projeler için, özellikle uygulamalarınız harika animasyonlara yahut native platformun _cutting-edge_ özelliklerine bağımlı değilse Hybrid bir uygulama işinizi fazlasıyla görecektir diyebilirim; lakin istekleriniz ve yazılım geliştirme takımınızın kompozisyonu (örneğin hem mobil uygulama hem de web geliştiricilerin olduğu ve uyumlu çalışabilecekleri bir ortam) uygunsa native çözümlere yönelmeniz daha sağlıklı olacaktır.
 
-Cross-Platform Development’ın Geleceği
-======================================
+## Cross-Platform Development’ın Geleceği
 
 Önümüzdeki yıllar içinde çok daha fazla konuşulacak ve uygulanacak bir yöntem olduğunu düşünüyorum; zira cihazlar çeşitleniyor, alternatif platformlar peyda oluyor ve projelerin farklı ortamlarda kendilerini gösterme/bulunma ihtiyaçları artıyor. Bu bağlamda şu anda birleştirici bir geliştirme ortamı/kültürü olarak Web Development bu ihtiyaçların ortasında yer alıyor gibi görünse de örneğin Flutter’ı geliştiren ekibin üzerinde çalıştığı Hummingbird’de olduğu gibi Web’in de üzerinde bir soyutlama (_abstraction_) seviyesinde hem Web’e hem de iOS ve Android’e çıktı oluşturabilecek geliştirme imkanları gündemlerimizi daha da fazla işgal edecek.
 
-React
-=====
+## React
 
 Tam bu noktada ara vermek ve uygulama ön yüz geliştirme dünyasında son yılların en popüler JavaScript kütüphanesinden, React’tan bahsetmek istiyorum. Buradan React-Native’e ve React-Native-Web’e uzanacağız tabii.
 
@@ -39,27 +37,23 @@ React, sadece React olarak üzerinde çalışacağı platforma dair herhangi bir
 
 React, _Imperative_ değil _declarative_ bir kod yazım perspektifi sunuyor. Bunu da `Component`’lerin `state` ve `prop`’ların değişimi ile re-render olması prensibi ile çözüyor.
 
-Web’de React Kullanımı
-======================
+## Web’de React Kullanımı
 
 Bahsettiğim gibi React, kendi başına hangi platformda çalıştığını bilmiyor. `Component`'lerin tanımlanması, birbirleriyle kurdukları ilişki ile `state` ve `prop` kavramlarını temel alıyor. Temelde UI'ı _declarative_ biçimde oluşturmanızı sağlıyor.
 
 Web’de React kullanmak için ReactDOM adında ek bir kütüphaneden yararlanıyoruz. ReactDOM bünyesinde DOM spesifik metodlar barındırıyor, React bileşenlerinizin Web üzerinde çalışır hale gelmesini sağlıyor bu metodlar sayesinde.
 
-React-Native
-============
+## React-Native
 
 React-Native, Facebook tarafından 2015 Mart’ında OSS olarak Github üzerinden yayınlandı. React’la birlikte gündeme gelen “learn once, write everywhere” düsturuna bağlı kalarak, kısa sürede Cross-Platform Development için en önde gelen geliştirme platformlarından biri haline geldi. Kütüphanenin Github üzerindeki performansı, bu yazının kaleme alındığı tarih itibariyle gayet iyi durumda.
 
-React-Native-Web
-================
+## React-Native-Web
 
 Cross-Platform çözümler için araştırma yaparken React-Native-Web’le karşılaştım. Nicolas Gallagher tarafından yazılmış bir kütüphane. Nicolas Gallagher Twitter’ın PWA’inin yazılması sürecinde tech-lead olarak rol almış bir yazılımcı, günümüzde ise Facebook’ta çalışıyor. React-Native-Web ilk olarak 2015 Temmuz’unda yayınlanmış, ilerleyen süreçte geliştirilmiş, hali hazırda da geliştirilmeye devam edilen bir JavaScript kütüphanesi.
 
 React-Native-Web’in temel fikri son derece basit aslında. Nasıl React-Native ile tek bir Component lisanı kullanıyor ve bunları Android ve iOS eşleniklerine dönüştürüyorsak, bu kütüphane de aynı soyutlamaları karşılıkları olan DOM uyumlu HTML tag’lerine eviriyor. Bu eşleştirme sayesinde React seviyesinde tuttuğumuz business logic, state yönetimi, bileşen hiyerarşisi aynı kalmakla birlikte üç platform için de render() fonksiyonları içinde aynı lisanı kullanabilir hale geliyoruz.
 
-Expo
-====
+## Expo
 
 Expo, React-Native üzerine kurulmuş bir araçlar bütünü. React-Native geliştirirken hayatınızı oldukça kolaylaştıran bazı araçlar sunuyor. Örneğin Expo CLI ile uygulamanızı başlattığınızda basit CLI komutları üzerinden istediğiniz platform için uygulamanızı geliştirebiliyor, verdiği QR kodu telefonunuza kurduğunuz Expo Client uygulaması ile kolayca açıp cihaz üzerinde debug edebiliyorsunuz. Ayrıca birçok kütüphane ile örneğin cihaz spesifik kamera, akselerometre vb. API’larına ulaşmanızı sağlıyor, bunlar ayrıca geliştirme yapma maliyetinden sizi kurtarıyor. Tüm getirilerinin yanında hazır bir çözüm olmasından kelli dünyanızı kısıtlıyor ve React-Native projenize platform özel dillerde (Objective-C, Swift, Java yahut Kotlin) yazılmış modülleri eklemenizi namümkün hale getiriyor. Ayrıca hazır çözümlerle gelmesinin bir dezavantajı olarak uygulamanızın boyutu büyüyor.
 
@@ -69,8 +63,7 @@ Expo’yla ilgili son bir not: React-Native-Web’i React-Native ile bir araya g
 
 * * *
 
-React-Native-Web Tecrübelerim
-=============================
+## React-Native-Web Tecrübelerim
 
 Geldik en can alıcı kısıma. Kendi React-Native-Web öğrenme ve geliştirme sürecimde yaşadıklarımdan dem vuracağım bu noktada.
 

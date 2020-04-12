@@ -134,9 +134,20 @@ body > .container {
     font-family: var(--font-family);
 }
 .post h1 {
-    margin: 40px 0;
+    margin-top: 40px;
     color: var(--title-color);
     font-size: 1.75em;
+    font-weight: var(--font-weight-light);
+}
+.post h1 + p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--misc-color);
+}
+.post h2 {
+    margin-top: 40px;
+    color: var(--title-color);
+    font-size: 1.5em;
     font-weight: var(--font-weight-light);
 }
 .post p {

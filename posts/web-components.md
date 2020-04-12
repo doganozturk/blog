@@ -7,6 +7,7 @@ date: 2019-06-17
 ---
 
 # {{ title }}
+{{ page.date | prettyDate }}
 
 Web Components beni son zamanlarda en fazla heyecanlandıran ön-yüz geliştirme konseptlerinden biri. Bu yazımda, _HTML_, _CSS_ ve _JavaScript_ ile tekrar tekrar kullanılabilir ve kapsüllenmiş web bileşenleri geliştirmemizi sağlayan bu teknolojiler bütününden bahsedeceğim.
 

@@ -28,12 +28,12 @@ function setTheme(theme) {
     }
 }
 
-function toggleSwitches() {
+function toggleSwitches(theme) {
     const root = document.documentElement;
     const switches = root.querySelectorAll('.theme-switcher .switch');
 
     switches.forEach(itm => {
-        itm.classList.toggle('hidden');
+        itm.classList[itm.classList.contains(`switch-${theme}`) ? 'add' : 'remove']('hidden');
     });
 }
 
@@ -43,7 +43,7 @@ function themeControls() {
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
-        toggleSwitches();
+        toggleSwitches(savedTheme);
         setTheme(savedTheme);
     }
 
@@ -51,7 +51,7 @@ function themeControls() {
         const selectedTheme = getCurrentTheme() === 'light' ? 'dark' : 'light';
 
         localStorage.setItem('theme', selectedTheme);
-        toggleSwitches();
+        toggleSwitches(selectedTheme);
         setTheme(selectedTheme);
     };
 

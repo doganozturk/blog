@@ -37,7 +37,7 @@ function toggleSwitches(theme) {
     });
 }
 
-function themeControls() {
+function initThemeControls() {
     const root = document.documentElement;
     const switches = root.querySelectorAll('.theme-switcher .switch');
     const savedTheme = localStorage.getItem('theme');
@@ -60,17 +60,4 @@ function themeControls() {
     });
 }
 
-function initHighlight() {
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
-    });
-}
-
-(function() {
-    themeControls();
-    initHighlight();
-})();
-
-
+initThemeControls();

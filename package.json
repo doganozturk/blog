@@ -13,7 +13,5 @@
     "devDependencies": {
         "@11ty/eleventy": "^0.10.0"
     },
-    "dependencies": {
-        "github-markdown-css": "^4.0.0"
-    }
+    "dependencies": {}
 }

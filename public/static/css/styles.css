@@ -19,14 +19,14 @@
 }
 
 /* DARK MODE */
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #2c3e50;
         --text-color: #ecf0f1;
         --title-color: #bdc3c7;
         --misc-color: #f39c12;
     }
-}*/
+}
 
 /* GENERAL */
 * {
@@ -153,14 +153,13 @@ body > .container {
     margin-top: 10px;
 }
 .post pre {
-    margin-top: 20px;
+    margin: 20px -20px 0 -20px;
 }
 .post pre code {
     padding: 20px;
     font-family: var(--font-family-code);
     font-size: 0.95em;
     line-height: 1.4em;
-    border-radius: 4px;
 }
 .post p > code {
     padding: 0 4px;
@@ -187,6 +186,7 @@ body > .container {
     justify-content: space-between;
     margin-top: auto;
     margin-bottom: 10px;
+    padding-top: 70px;
 }
 .footer > .links,
 .footer > .theme-switcher {
@@ -199,4 +199,15 @@ body > .container {
     font-size: 0.95em;
     font-weight: var(--font-weight-normal);
 }
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .post pre {
+        margin: 20px 0 0 0;
+    }
+    .post pre code {
+        border-radius: 4px;
+    }
+}
+
 

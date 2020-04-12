@@ -3,6 +3,7 @@ html(lang="tr")
     include ../partials/head
     body
         .container
+            include ../partials/header
             main.post.markdown-body
                 | !{ content }
             include ../partials/footer

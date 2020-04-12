@@ -1,5 +1,8 @@
 header.header
-    div.title
-        p.name Doğan Öztürk
-        p.info Yazılım ve diğer şeyler üzerine kişisel karalamalar
-    img.avatar(src="/public/static/images/avatar.jpg")
+    a.header-main(href="/")
+        img.avatar(src="/public/static/images/avatar.jpg")
+        .title
+            p.name Doğan Öztürk
+            p.info Yazılım ve diğer şeyler üzerine kişisel karalamalar
+    include ./theme-switcher
+

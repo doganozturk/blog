@@ -1,6 +1,9 @@
-function themeControls() {
+function getCurrentTheme() {
+    return getComputedStyle(document.documentElement, ':root').getPropertyValue('--theme-name');
+}
+
+function setTheme(theme) {
     const root = document.documentElement;
-    const switches = root.querySelectorAll('.theme-switcher .switch');
     const themeMapping = {
         'light': {
             '--bg-color': '#ecf0f1',
@@ -15,50 +18,59 @@ function themeControls() {
             '--misc-color': '#f39c12',
         }
     };
+
+    root.style.setProperty('--theme-name', theme);
+
+    for (const property in themeMapping[theme]) {
+        if (themeMapping[theme].hasOwnProperty(property)) {
+            root.style.setProperty(property, themeMapping[theme][property])
+        }
+    }
+}
+
+function toggleSwitches() {
+    const root = document.documentElement;
+    const switches = root.querySelectorAll('.theme-switcher .switch');
+
+    switches.forEach(itm => {
+        itm.classList.toggle('hidden');
+    });
+}
+
+function themeControls() {
+    const root = document.documentElement;
+    const switches = root.querySelectorAll('.theme-switcher .switch');
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
-        root.style.setProperty('--theme-name', savedTheme);
-
-        for (const property in themeMapping[savedTheme]) {
-            if (themeMapping[savedTheme].hasOwnProperty(property)) {
-                root.style.setProperty(property, themeMapping[savedTheme][property])
-            }
-        }
-
-        if (savedTheme === 'light') {
-            switches[0].classList.add('hidden');
-            switches[1].classList.remove('hidden');
-        }
+        toggleSwitches();
+        setTheme(savedTheme);
     }
 
+    const handleSwitchClick = e => {
+        const selectedTheme = getCurrentTheme() === 'light' ? 'dark' : 'light';
+
+        localStorage.setItem('theme', selectedTheme);
+        toggleSwitches();
+        setTheme(selectedTheme);
+    };
+
     switches.forEach(item => {
-        item.addEventListener('click', e => {
-            const currentTheme = getComputedStyle(root, ':root')
-                .getPropertyValue('--theme-name');
-            const selectedTheme = currentTheme === 'light' ? 'dark' : 'light';
+        item.addEventListener('click', handleSwitchClick);
+    });
+}
 
-            switches.forEach(itm => {
-               itm.classList.toggle('hidden');
-            });
-
-            root.style.setProperty('--theme-name', selectedTheme);
-
-            localStorage.setItem('theme', selectedTheme);
-
-            for (const property in themeMapping[selectedTheme]) {
-                if (themeMapping[selectedTheme].hasOwnProperty(property)) {
-                    root.style.setProperty(property, themeMapping[selectedTheme][property])
-                }
-            }
+function initHighlight() {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
         });
     });
 }
 
-themeControls();
+(function() {
+    themeControls();
+    initHighlight();
+})();
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-});
+

@@ -74,18 +74,9 @@ React-Native-Web Tecrübelerim
 
 Geldik en can alıcı kısıma. Kendi React-Native-Web öğrenme ve geliştirme sürecimde yaşadıklarımdan dem vuracağım bu noktada.
 
-[
 
-doganozturk/react-native-web-boilerplate
-----------------------------------------
 
-### React-Native-Web boilerplate project with opinionated folder structure. - doganozturk/react-native-web-boilerplate
-
-#### github.com
-
-](https://github.com/doganozturk/react-native-web-boilerplate)
-
-Yukarıdaki link’te bu süreçte oluşturduğum bir repo var. Aslında biraz araştırırsanız göreceğiniz üzere üretilmiş pek çok React-Native-Web başlangıç projesi var; ancak hem React hem de React-Native tarafında versiyonlar ilerledikçe, ayrıca komünite tarafından geliştirilen yardımcı kütüphaneler de aynı şekilde geliştikçe bazı şeyler eskiyor. Bu da sürecin tekrar ele alınmasını gerekli kılabiliyor.
+[Bu link](https://github.com/doganozturk/react-native-web-boilerplate)’te bu süreçte oluşturduğum bir repo var. Aslında biraz araştırırsanız göreceğiniz üzere üretilmiş pek çok React-Native-Web başlangıç projesi var; ancak hem React hem de React-Native tarafında versiyonlar ilerledikçe, ayrıca komünite tarafından geliştirilen yardımcı kütüphaneler de aynı şekilde geliştikçe bazı şeyler eskiyor. Bu da sürecin tekrar ele alınmasını gerekli kılabiliyor.
 
 Yaptığım çalışmada kullanılan tüm paketlerin maksatlarını öğrenmek, hem de böyle bir implementasyonun büyük bir projede karşımıza çıkarabileceği karmaşıklıkları baştan sezebilmek adına yapıyı düşe kalka, sıfırdan kurmaya gayret ettim.
 

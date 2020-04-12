@@ -3,8 +3,9 @@ html(lang="tr")
     include ../partials/head
     block styles
         link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet")
-        link(href="/public/static/css/reset.css" rel="stylesheet")
-        link(href="/public/static/css/styles.css" rel="stylesheet")
+        style
+            include:clean-css ../../public/static/css/reset.css
+            include:clean-css ../../public/static/css/styles.css
     body
         .container
             include ../partials/header
@@ -12,4 +13,5 @@ html(lang="tr")
                 | !{ content }
             include ../partials/footer
 
-            script(src="/public/static/js/init-theme-controls.js")
+            script
+                include:uglify-js:babel ../../public/static/js/init-theme-controls.js

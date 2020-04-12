@@ -4,9 +4,10 @@ html(lang="tr")
     block styles
         link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet")
-        link(href="/public/static/css/reset.css" rel="stylesheet")
-        link(href="/public/static/css/styles.css" rel="stylesheet")
-        link(href="/public/static/css/highlight/monokai-sublime.css" rel="stylesheet")
+        style
+            include:clean-css ../../public/static/css/reset.css
+            include:clean-css ../../public/static/css/styles.css
+            include:clean-css ../../public/static/css/highlight/monokai-sublime.css
     body
         .container
             include ../partials/header
@@ -14,6 +15,7 @@ html(lang="tr")
                 | !{ content }
             include ../partials/footer
 
-            script(src="/public/static/js/highlight/highlight.pack.js")
-            script(src="/public/static/js/init-highlight.js")
-            script(src="/public/static/js/init-theme-controls.js")
+            script
+                include:uglify-js ../../public/static/js/highlight/highlight.pack.js
+                include:uglify-js:babel ../../public/static/js/init-highlight.js
+                include:uglify-js:babel ../../public/static/js/init-theme-controls.js

@@ -248,3 +248,5 @@ function greetPerson() {
 ```
 
 İlk konsol ifadesini kaldırırsak bu sefer *let* sebepli  aynı hatayı *greetPerson* fonksiyonunun çalıştırılması dolayısıyla alacağız.
+
+*\* Bu yazı ilk olarak [labs.zingat.com](https://labs.zingat.com) adresinde belirtilen tarihte yayımlanmıştır.*

@@ -194,6 +194,10 @@ body > .container {
     height: 0.05em;
     background-color: var(--text-color);
 }
+.post em {
+    font-size: 0.9em;
+    font-style: italic;
+}
 
 
 /* FOOTER */

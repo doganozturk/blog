@@ -220,3 +220,5 @@ router.post('/user', [logger, isAdmin], postUser);
 İfade etmeye çalıştığım yapının benzerleri ve çok daha profesyonelce hazırlanmış, kullanılabilir halleri için [Nest.js](https://nestjs.com), [Ts.ED](https://tsed.io) gibi popüler projeleri inceleyebilirsiniz.
 
 Bu yazıda kod kullandığım projeye [https://github.com/doganozturk/express-typescript-decorators](https://github.com/doganozturk/express-typescript-decorators) adresi üzerinden ulaşabilir, inceleyebilirsiniz.
+
+*\* Bu yazı ilk olarak [labs.zingat.com](https://labs.zingat.com) adresinde belirtilen tarihte yayımlanmıştır.*

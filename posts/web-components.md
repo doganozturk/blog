@@ -175,3 +175,5 @@ Yukarıdaki kod bloğunda bu bileşene özgü ( _scoped_) bir CSS yazımı örne
 * * *
 
 Bu projenin tamamlanmış haline ve diğer örneklerin de yer aldığı repoya [https://github.com/doganozturk/web-components](https://github.com/doganozturk/web-components) üzerinden erişebilirsiniz. Konu üzerine gerçekleştirdiğim sunuma da [buradan](https://youtu.be/IGDJyP_-p6A) ulaşabilirsiniz. Ayrıca bu örnekleri oluşturmam ve geliştirmem noktasında Web Components’i daha iyi anlamamı sağlayan ve örneklerinden yararlandığım Maximilian Schwarzmüller’in Udemy’deki [Web Components & Stencil.js — Build Custom HTML Elements](https://www.udemy.com/web-components-stenciljs-build-custom-html-elements/) dersini de konuyla ilgili herkese tavsiye ediyorum.
+
+*\* Bu yazı ilk olarak [labs.zingat.com](https://labs.zingat.com) adresinde belirtilen tarihte yayımlanmıştır.*

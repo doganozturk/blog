@@ -2,7 +2,6 @@ doctype html
 html(lang="tr")
     include ../partials/head
     block styles
-        link(rel="preload" href="/public/static/fonts/SourceCodePro-Regular.ttf" as="font" type="font/ttf")
         style
             include:clean-css ../../public/static/css/reset.css
             include:clean-css ../../public/static/css/styles.css
@@ -15,6 +14,8 @@ html(lang="tr")
             include ../partials/footer
 
             script
+                include ../../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
                 include ../../public/static/js/highlight/highlight.pack.js
+                include:uglify-js:babel ../../public/static/js/init-fonts.js
                 include:uglify-js:babel ../../public/static/js/init-highlight.js
                 include:uglify-js:babel ../../public/static/js/init-theme-controls.js

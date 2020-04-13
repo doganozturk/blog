@@ -6,7 +6,8 @@
     "scripts": {
         "start": "eleventy --serve",
         "dryrun": "eleventy --dryrun",
-        "build": "rimraf _site && eleventy"
+        "build": "rimraf _site && eleventy",
+        "publish": "surge"
     },
     "keywords": [],
     "author": "",
@@ -17,7 +18,8 @@
         "jstransformer-babel": "^2.1.0",
         "jstransformer-clean-css": "^2.1.0",
         "jstransformer-uglify-js": "^1.2.0",
-        "rimraf": "^3.0.2"
+        "rimraf": "^3.0.2",
+        "surge": "^0.21.3"
     },
     "dependencies": {}
 }

@@ -7,7 +7,7 @@
         "start": "eleventy --serve",
         "dryrun": "eleventy --dryrun",
         "build": "rimraf _site && eleventy",
-        "publish": "surge"
+        "publish": "surge _site doganozturk.dev"
     },
     "keywords": [],
     "author": "",

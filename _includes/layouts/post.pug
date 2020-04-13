@@ -2,7 +2,7 @@ doctype html
 html(lang="tr")
     include ../partials/head
     block styles
-        link(href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet")
+        link(rel="preload" href="/public/static/fonts/SourceCodePro-Regular.ttf" as="font" type="font/ttf")
         style
             include:clean-css ../../public/static/css/reset.css
             include:clean-css ../../public/static/css/styles.css

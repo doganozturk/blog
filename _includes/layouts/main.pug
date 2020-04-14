@@ -21,8 +21,8 @@ html(lang="tr")
         meta(property="og:site_name" content="doganozturk.dev")
     block styles
         style
-            include:clean-css ../../public/static/css/reset.css
-            include:clean-css ../../public/static/css/styles.css
+            include:clean-css ../../css/reset.css
+            include:clean-css ../../css/styles.css
     body
         .container
             include ../partials/header
@@ -32,5 +32,5 @@ html(lang="tr")
 
             script
                 include ../../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
-                include:uglify-js:babel ../../public/static/js/init-fonts.js
-                include:uglify-js:babel ../../public/static/js/init-theme-controls.js
+                include:uglify-js:babel ../../js/init-fonts.js
+                include:uglify-js:babel ../../js/init-theme-controls.js

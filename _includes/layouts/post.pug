@@ -19,9 +19,9 @@ html(lang="tr")
         meta(property="og:site_name" content="doganozturk.dev")
     block styles
         style
-            include:clean-css ../../public/static/css/reset.css
-            include:clean-css ../../public/static/css/styles.css
-            include:clean-css ../../public/static/css/highlight/monokai-sublime.css
+            include:clean-css ../../css/reset.css
+            include:clean-css ../../css/styles.css
+            include:clean-css ../../css/highlight/monokai-sublime.css
     body
         .container
             include ../partials/header
@@ -31,8 +31,8 @@ html(lang="tr")
 
             script
                 include ../../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
-                include ../../public/static/js/highlight/highlight.pack.js
-                include:uglify-js:babel ../../public/static/js/init-fonts.js
-                include:uglify-js:babel ../../public/static/js/init-fonts-code.js
-                include:uglify-js:babel ../../public/static/js/init-highlight.js
-                include:uglify-js:babel ../../public/static/js/init-theme-controls.js
+                include ../../js/highlight/highlight.pack.js
+                include:uglify-js:babel ../../js/init-fonts.js
+                include:uglify-js:babel ../../js/init-fonts-code.js
+                include:uglify-js:babel ../../js/init-highlight.js
+                include:uglify-js:babel ../../js/init-theme-controls.js

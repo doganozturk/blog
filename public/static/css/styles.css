@@ -72,6 +72,8 @@ a:hover {
 }
 :root.fonts-loaded {
     --font-family: 'Roboto', sans-serif;
+}
+:root.fonts-code-loaded {
     --font-family-code: 'Source Code Pro', monospace;
 }
 

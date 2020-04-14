@@ -2,15 +2,23 @@ doctype html
 html(lang="tr")
     include ../partials/head
     block meta
-        - var description = "Ben Doğan, yazılım mühendisiyim. Genel olarak yazılım, detayda ise web geliştirme, önyüz geliştirme, Node.js, Python vb. konularda düşüncelerimi paylaşmaya çalışıyorum."
+        -
+            var description = "Ben Doğan, yazılım mühendisiyim. Genel olarak yazılım, detayda ise web geliştirme, önyüz geliştirme, Node.js, Python vb. konularda düşüncelerimi paylaşmaya çalışıyorum."
         meta(name="description" content=description)
 
         meta(name="twitter:card" content="summary")
-        meta(name="twitter:site" content="Doğan Öztürk | Blog")
+        meta(name="twitter:site" content=title)
         meta(name="twitter:creator" content="Doğan Öztürk")
-        meta(name="twitter:title" content="Doğan Öztürk | Blog")
+        meta(name="twitter:title" content=title)
         meta(name="twitter:description" content=description)
         meta(name="twitter:image" content="https://doganozturk.dev/public/images/avatar.jpg")
+
+        meta(property="og:title" content=title)
+        meta(property="og:type" content="article")
+        meta(property="og:url" content="https://doganozturk.dev/")
+        meta(property="og:image" content="https://doganozturk.dev/public/images/avatar.jpg")
+        meta(property="og:description" content=description)
+        meta(property="og:site_name" content="doganozturk.dev")
     block styles
         style
             include:clean-css ../../public/static/css/reset.css

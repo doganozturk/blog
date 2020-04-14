@@ -1,6 +1,8 @@
 doctype html
 html(lang="tr")
     include ../partials/head
+    block meta
+        meta(name="description" content=description)
     block styles
         style
             include:clean-css ../../public/static/css/reset.css

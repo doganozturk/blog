@@ -47,26 +47,26 @@ a:hover {
 /* FONTS */
 @font-face {
     font-family: 'Roboto';
-    src: url('/public/static/fonts/Roboto-Light.ttf')  format('truetype');
+    src: url('/public/fonts/Roboto-Light.ttf')  format('truetype');
     font-weight: 300;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('/public/static/fonts/Roboto-LightItalic.ttf')  format('truetype');
+    src: url('/public/fonts/Roboto-LightItalic.ttf')  format('truetype');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('/public/static/fonts/Roboto-Regular.ttf')  format('truetype');
+    src: url('/public/fonts/Roboto-Regular.ttf')  format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('/public/static/fonts/SourceCodePro-Regular.ttf')  format('truetype');
+    src: url('/public/fonts/SourceCodePro-Regular.ttf')  format('truetype');
     font-weight: 400;
     font-display: swap;
 }
@@ -247,7 +247,6 @@ body > .container {
     margin-right: 5px;
     color: var(--misc-color);
     font-size: 0.95em;
-    font-weight: var(--font-weight-normal);
 }
 
 /* DARK MODE */

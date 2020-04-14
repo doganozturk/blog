@@ -1,4 +1,10 @@
 module.exports = function (eleventyConfig) {
+    eleventyConfig.setTemplateFormats([
+       'pug',
+       'md',
+       'ico',
+       'webmanifest'
+    ]);
     eleventyConfig.addLiquidFilter("prettyDate", function(value) {
         return value.toLocaleDateString('tr-TR');
     });

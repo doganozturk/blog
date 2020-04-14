@@ -12,8 +12,8 @@
     --misc-color: #d35400;
 
     /* FONTS */
-    --font-family: sans-serif;
-    --font-family-code: monospace;
+    --font-family: 'Roboto', sans-serif;
+    --font-family-code: 'Source Code Pro', monospace;
     --font-weight-light: 300;
     --font-weight-normal: 400;
 
@@ -70,12 +70,6 @@ a:hover {
     font-weight: 400;
     font-display: swap;
 }
-:root.fonts-loaded {
-    --font-family: 'Roboto', sans-serif;
-}
-:root.fonts-code-loaded {
-    --font-family-code: 'Source Code Pro', monospace;
-}
 
 /* BODY */
 body {
@@ -119,6 +113,8 @@ body > .container {
     font-weight: var(--font-weight-light);
 }
 .header > .header-main > .avatar {
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
     border-radius: 50%;
 }

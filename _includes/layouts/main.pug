@@ -31,6 +31,5 @@ html(lang="tr")
             include ../partials/footer
 
             script
-                include ../../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
-                include:uglify-js:babel ../../js/init-fonts.js
                 include:uglify-js:babel ../../js/init-theme-controls.js
+                include:uglify-js:babel ../../js/init-service-worker.js

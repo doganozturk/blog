@@ -30,9 +30,7 @@ html(lang="tr")
             include ../partials/footer
 
             script
-                include ../../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
                 include ../../js/highlight/highlight.pack.js
-                include:uglify-js:babel ../../js/init-fonts.js
-                include:uglify-js:babel ../../js/init-fonts-code.js
                 include:uglify-js:babel ../../js/init-highlight.js
                 include:uglify-js:babel ../../js/init-theme-controls.js
+                include:uglify-js:babel ../../js/init-service-worker.js

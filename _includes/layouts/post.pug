@@ -3,6 +3,13 @@ html(lang="tr")
     include ../partials/head
     block meta
         meta(name="description" content=description)
+
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content="Doğan Öztürk | Blog")
+        meta(name="twitter:creator" content="Doğan Öztürk")
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=description)
+        meta(name="twitter:image" content="/public/images/avatar.jpg")
     block styles
         style
             include:clean-css ../../public/static/css/reset.css

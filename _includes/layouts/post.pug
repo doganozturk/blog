@@ -19,15 +19,17 @@ html(lang="tr")
         meta(property="og:site_name" content="doganozturk.dev")
     block styles
         style
-            include:clean-css ../../css/reset.css
-            include:clean-css ../../css/styles.css
             include:clean-css ../../css/highlight/monokai-sublime.css
+            include:clean-css ../components/header/header.css
+            include:clean-css ../components/theme-switcher/theme-switcher.css
+            include:clean-css ../components/post/post.css
+            include:clean-css ../components/footer/footer.css
     body
         .container
-            include ../partials/header
-            main.post.markdown-body
+            include ../components/header/header
+            main.post
                 | !{ content }
-            include ../partials/footer
+            include ../components/footer/footer
 
             script
                 include ../../js/highlight/highlight.pack.js

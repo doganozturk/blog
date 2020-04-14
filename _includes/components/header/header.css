@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 10px 0;
+}
+.header > .header-main > .title {
+    align-self: flex-start;
+    margin-top: 15px;
+    color: var(--title-color);
+}
+.header > .header-main > .title > .name {
+    margin-left: -2px;
+    font-size: 2em;
+    font-weight: var(--font-weight-normal);
+}
+.header > .header-main > .title > .info {
+    margin-top: 10px;
+    font-weight: var(--font-weight-light);
+}
+.header > .header-main > .avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .header > .header-main {
+        display: flex;
+    }
+    .header > .header-main > .title {
+        margin-top: 5px;
+    }
+}

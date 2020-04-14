@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+a:hover {
+    opacity: 0.8;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-light);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.main {
+    margin-top: 80px;
+}

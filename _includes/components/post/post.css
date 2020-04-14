@@ -1,0 +1,79 @@
+.post {
+    font-family: var(--font-family);
+}
+.post h1 {
+    margin-top: 80px;
+    color: var(--title-color);
+    font-size: 1.75em;
+    font-weight: var(--font-weight-light);
+}
+.post h1 + p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--misc-color);
+}
+.post h2 {
+    margin-top: 40px;
+    color: var(--title-color);
+    font-size: 1.5em;
+    font-weight: var(--font-weight-light);
+}
+.post p {
+    margin-top: 20px;
+    line-height: 1.4;
+}
+.post hr + p {
+    margin-top: 40px;
+}
+.post p a {
+    color: var(--misc-color);
+}
+.post ul,
+.post ol {
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: disc;
+}
+.post ul li,
+.post ol li {
+    margin-top: 10px;
+}
+.post pre {
+    margin: 20px -20px 0 -20px;
+}
+.post pre code {
+    padding: 20px;
+    font-family: var(--font-family-code);
+    font-size: 0.95em;
+    line-height: 1.4em;
+}
+.post p > code {
+    padding: 0 4px;
+    font-family: var(--font-family-code);
+    font-size: 0.9em;
+    color: var(--block-text);
+    background-color: var(--block-bg);
+    border-radius: 4px;
+}
+.post blockquote {
+    padding-left: 30px;
+    font-style: italic;
+}
+.post hr {
+    margin-top: 40px;
+    height: 0.05em;
+    background-color: var(--text-color);
+}
+.post em {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .post pre {
+        margin: 20px 0 0 0;
+    }
+    .post pre code {
+        border-radius: 4px;
+    }
+}

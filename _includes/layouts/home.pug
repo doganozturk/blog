@@ -21,14 +21,16 @@ html(lang="tr")
         meta(property="og:site_name" content="doganozturk.dev")
     block styles
         style
-            include:clean-css ../../css/reset.css
-            include:clean-css ../../css/styles.css
+            include:clean-css ../components/header/header.css
+            include:clean-css ../components/theme-switcher/theme-switcher.css
+            include:clean-css ../components/post-summary/post-summary.css
+            include:clean-css ../components/footer/footer.css
     body
         .container
-            include ../partials/header
+            include ../components/header/header
             main.main
                 | !{ content }
-            include ../partials/footer
+            include ../components/footer/footer
 
             script
                 include:uglify-js:babel ../../js/init-theme-controls.js

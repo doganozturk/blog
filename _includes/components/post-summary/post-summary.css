@@ -1,0 +1,20 @@
+.post-summaries > .post-summary {
+    display: block;
+}
+.post-summaries > .post-summary:not(:first-child) {
+    margin-top: 50px;
+}
+.post-summaries > .post-summary > .title {
+    font-size: 1.3em;
+    line-height: 1.2;
+    color: var(--title-color);
+}
+.post-summaries > .post-summary > .date {
+    margin-top: 8px;
+    font-size: 0.8em;
+    color: var(--misc-color);
+}
+.post-summaries > .post-summary > .summary {
+    margin-top: 20px;
+    line-height: 1.4;
+}

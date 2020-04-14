@@ -1,0 +1,31 @@
+:root {
+    /* CODE BLOCK COLORS */
+    --block-bg: #bdc3c7;
+    --block-text: #2c3e50;
+
+    /* THEME COLORS */
+    --theme-name: light;
+    --bg-color: #ecf0f1;
+    --text-color: #34495e;
+    --title-color: #2c3e50;
+    --misc-color: #d35400;
+
+    /* FONTS */
+    --font-family: 'Roboto', sans-serif;
+    --font-family-code: 'Source Code Pro', monospace;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+
+    /* SIZES */
+    --max-width: 720px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-name: dark;
+        --bg-color: #2c3e50;
+        --text-color: #ecf0f1;
+        --title-color: #bdc3c7;
+        --misc-color: #f39c12;
+    }
+}

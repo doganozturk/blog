@@ -3,12 +3,17 @@
     --block-bg: #bdc3c7;
     --block-text: #2c3e50;
 
-    /* THEME COLORS */
-    --theme-name: light;
-    --bg-color: #ecf0f1;
-    --text-color: #34495e;
-    --title-color: #2c3e50;
-    --misc-color: #d35400;
+    /* THEME */
+    /* LIGHT */
+    --bg-color-light: #ecf0f1;
+    --text-color-light: #34495e;
+    --title-color-light: #2c3e50;
+    --misc-color-light: #d35400;
+    /* DARK */
+    --bg-color-dark: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --title-color-dark: #bdc3c7;
+    --misc-color-dark: #f39c12;
 
     /* FONTS */
     --font-family: 'Roboto', sans-serif;
@@ -19,13 +24,24 @@
     /* SIZES */
     --max-width: 720px;
 }
+:root.light {
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color-light);
+    --title-color: var(--title-color-light);
+    --misc-color: var(--misc-color-light);
+}
+:root.dark {
+    --bg-color: var(--bg-color-dark);
+    --text-color: var(--text-color-dark);
+    --title-color: var(--title-color-dark);
+    --misc-color: var(--misc-color-dark);
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --theme-name: dark;
-        --bg-color: #2c3e50;
-        --text-color: #ecf0f1;
-        --title-color: #bdc3c7;
-        --misc-color: #f39c12;
+        --bg-color: var(--bg-color-dark);
+        --text-color: var(--text-color-dark);
+        --title-color: var(--title-color-dark);
+        --misc-color: var(--misc-color-dark);
     }
 }

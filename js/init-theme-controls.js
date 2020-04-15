@@ -1,31 +1,8 @@
-function getCurrentTheme() {
-    return getComputedStyle(document.documentElement, ':root').getPropertyValue('--theme-name');
-}
-
 function setTheme(theme) {
     const root = document.documentElement;
-    const themeMapping = {
-        'light': {
-            '--bg-color': '#ecf0f1',
-            '--text-color': '#34495e',
-            '--title-color': '#2c3e50',
-            '--misc-color': '#d35400',
-        },
-        'dark': {
-            '--bg-color': '#2c3e50',
-            '--text-color': '#ecf0f1',
-            '--title-color': '#bdc3c7',
-            '--misc-color': '#f39c12',
-        }
-    };
 
-    root.style.setProperty('--theme-name', theme);
-
-    for (const property in themeMapping[theme]) {
-        if (themeMapping[theme].hasOwnProperty(property)) {
-            root.style.setProperty(property, themeMapping[theme][property])
-        }
-    }
+    root.classList.remove(theme === 'light' ? 'dark' : 'light');
+    root.classList.add(theme);
 }
 
 function toggleSwitches(theme) {
@@ -40,15 +17,13 @@ function toggleSwitches(theme) {
 function initThemeControls() {
     const root = document.documentElement;
     const switches = root.querySelectorAll('.theme-switcher .switch');
-    const savedTheme = localStorage.getItem('theme');
+    const theme = localStorage.getItem('theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-    if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
-        toggleSwitches(savedTheme);
-        setTheme(savedTheme);
-    }
+    toggleSwitches(theme);
+    setTheme(theme);
 
     const handleSwitchClick = e => {
-        const selectedTheme = getCurrentTheme() === 'light' ? 'dark' : 'light';
+        const selectedTheme = document.documentElement.classList.contains('light') ? 'dark' : 'light';
 
         localStorage.setItem('theme', selectedTheme);
         toggleSwitches(selectedTheme);

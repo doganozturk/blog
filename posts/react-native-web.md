@@ -93,6 +93,11 @@ Bunun yanında eğer ilgili ön yüzleriniz yukarıda bahsettiğim durumlardan m
 
 * * *
 
-Zingat Yazılım Ekibi olarak 29 Haziran 2019 tarihinde İTÜ Arı 3 Teknokent Konferans Salonu’nda düzenlediğimiz ikinci Zeetup etkinliğimizde bu konuda [bir sunum](https://youtu.be/G5KBZWLhtMM) gerçekleştirdim. Cross-Platform Development’ın merak uyandırıcı dünyasına React/React-Native özelinde ufak bir giriş anlamında göz atmanızı tavsiye ederim.
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G5KBZWLhtMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</div>
+
+Zingat Yazılım Ekibi olarak 29 Haziran 2019 tarihinde İTÜ Arı 3 Teknokent Konferans Salonu’nda düzenlediğimiz ikinci Zeetup etkinliğimizde bu konuda bir sunum gerçekleştirdim. Cross-Platform Development’ın merak uyandırıcı dünyasına React/React-Native özelinde ufak bir giriş anlamında göz atmanızı tavsiye ederim.
 
 *\* Bu yazı ilk olarak [labs.zingat.com](https://labs.zingat.com) adresinde belirtilen tarihte yayımlanmıştır.*

@@ -1,47 +1,47 @@
 .post {
     font-family: var(--font-family);
 }
-.post h1 {
+.post > h1 {
     margin-top: 80px;
     color: var(--title-color);
     font-size: 26px;
     font-weight: var(--font-weight-light);
 }
-.post h1 + p {
+.post > h1 + p {
     margin-top: 10px;
     font-size: 15px;
     color: var(--misc-color);
 }
-.post h2 {
+.post > h2 {
     margin-top: 40px;
     color: var(--title-color);
     font-size: 24px;
     font-weight: var(--font-weight-light);
 }
-.post p {
+.post > p {
     margin-top: 20px;
     line-height: 1.4;
 }
-.post hr + p {
+.post > hr + p {
     margin-top: 40px;
 }
-.post p a {
+.post > p > a {
     color: var(--misc-color);
 }
-.post ul,
-.post ol {
+.post > ul,
+.post > ol {
     margin-top: 20px;
     padding-left: 20px;
     list-style: disc;
 }
-.post ul li,
-.post ol li {
+.post > ul > li,
+.post > ol > li {
     margin-top: 10px;
 }
-.post pre {
+.post > pre {
     margin: 20px -20px 0 -20px;
 }
-.post pre code {
+.post > pre > code {
     padding: 20px;
     font-family: var(--font-family-code);
     font-size: 15px;
@@ -55,25 +55,38 @@
     background-color: var(--block-bg);
     border-radius: 4px;
 }
-.post blockquote {
+.post > blockquote {
+    margin-top: 20px;
     padding-left: 30px;
     font-style: italic;
 }
-.post hr {
+.post > hr {
     margin-top: 40px;
     height: 2px;
     background-color: var(--text-color);
 }
-.post em {
-    font-size: 15px;
+.post > p > em {
     font-style: italic;
+}
+.post > .video-wrapper {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.post > .video-wrapper > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
-    .post pre {
+    .post > pre {
         margin: 20px 0 0 0;
     }
-    .post pre code {
+    .post > pre > code {
         border-radius: 4px;
     }
 }

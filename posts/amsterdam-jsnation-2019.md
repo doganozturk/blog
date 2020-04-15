@@ -129,3 +129,5 @@ David Rousset, organizasyonun son sunumunda VR, mobile ve web için WebGL ve Bab
 </div>
 
 Katılımın son derece yoğun olduğu organizasyon geriye keyifli anılar ve yeni arkadaşlıklar bıraktı. Önümüzdeki senelerde de daha da kalabalık bir ekiple orada olmayı diliyorum.
+
+*\* Bu yazı ilk olarak [labs.zingat.com](https://labs.zingat.com) adresinde belirtilen tarihte yayımlanmıştır.*

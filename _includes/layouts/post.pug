@@ -32,7 +32,9 @@ html(lang="tr")
             include ../components/footer/footer
 
             script
+                include ../../node_modules/lozad/dist/lozad.min.js
                 include ../../js/highlight/highlight.pack.js
+                include:uglify-js:babel ../../js/init-lazyload.js
                 include:uglify-js:babel ../../js/init-highlight.js
                 include:uglify-js:babel ../../js/init-theme-controls.js
                 include:uglify-js:babel ../../js/init-service-worker.js

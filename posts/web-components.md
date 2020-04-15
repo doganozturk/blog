@@ -175,7 +175,7 @@ Yukarıdaki kod bloğunda bu bileşene özgü ( _scoped_) bir CSS yazımı örne
 * * *
 
 <div class="video-wrapper">
-    <iframe class="lazy" width="560" height="315" src="https://www.youtube.com/embed/IGDJyP_-p6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/IGDJyP_-p6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 </div>
 

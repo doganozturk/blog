@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addLayoutAlias('home', 'layouts/home.pug');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.pug');
     eleventyConfig.addPassthroughCopy('public');
+    eleventyConfig.addPassthroughCopy('_headers');
     eleventyConfig.addPassthroughCopy('service-worker.js');
     eleventyConfig.addPassthroughCopy('node_modules/workbox-sw/build/workbox-sw.js');
 };

@@ -1,8 +1,17 @@
 {
     "name": "blog",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Doğan Öztürk's Personal Blog",
+    "homepage": "https://github.com/doganozturk/blog#readme",
+    "email": "doganozturk2005@gmail.com",
+    "url": "https://doganozturk.dev/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/doganozturk/blog.git"
+    },
+    "engines": {
+        "node": ">=12.13.2"
+    },
     "scripts": {
         "start": "eleventy --serve",
         "dryrun": "eleventy --dryrun",

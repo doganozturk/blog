@@ -1,8 +1,8 @@
 .post {
+    margin-top: 60px;
     font-family: var(--font-family);
 }
 .post > h1 {
-    margin-top: 80px;
     color: var(--title-color);
     font-size: 26px;
     font-weight: var(--font-weight-light);

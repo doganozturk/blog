@@ -18,6 +18,8 @@ html.light(lang="tr")
         meta(property="og:description" content=description)
         meta(property="og:site_name" content="doganozturk.dev")
     block styles
+        link(href="https://storage.googleapis.com" rel="preconnect")
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet")
         style
             include:clean-css ../../css/highlight/monokai-sublime.css
             include:clean-css ../components/header/header.css
@@ -27,7 +29,7 @@ html.light(lang="tr")
     body
         .container
             include ../components/header/header
-            main.post
+            article.post
                 | !{ content }
             include ../components/footer/footer
 

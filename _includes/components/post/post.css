@@ -52,6 +52,7 @@
     font-size: 15px;
     color: var(--block-text);
     background-color: var(--block-bg);
+    border-radius: 4px;
 }
 .post > blockquote {
     margin-top: 20px;

@@ -24,7 +24,7 @@ olarak ifade edebiliriz. Yaratım fazı aşamasında JavaScript motoru bize *glo
 
 Yaratım fazında gerçekleşen bir durum daha var. Bu yazının da konusu olan *hoisting* (yukarı kaldırma/çekme) tam da bu noktada gerçekleşiyor. Aşağıdaki gibi bir kod parçacığımız olsun:
 
-```javascript
+``` js
 console.log(person);
 console.log(greetPerson);
 

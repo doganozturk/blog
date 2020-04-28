@@ -94,7 +94,7 @@ Bunun yanında eğer ilgili ön yüzleriniz yukarıda bahsettiğim durumlardan m
 * * *
 
 <div class="video-wrapper">
-    <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/G5KBZWLhtMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe class="lazy" width="560" height="315" title="Cross-Platform Development: React-Native-Web" data-src="https://www.youtube.com/embed/G5KBZWLhtMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 </div>
 

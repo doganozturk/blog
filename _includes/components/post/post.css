@@ -42,9 +42,8 @@
     margin: 20px -10px 0 -10px;
 }
 .post > pre > code {
-    padding: 20px;
     font-family: var(--font-family-code);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.4;
 }
 .post p > code {
@@ -53,12 +52,12 @@
     font-size: 15px;
     color: var(--block-text);
     background-color: var(--block-bg);
-    border-radius: 4px;
 }
 .post > blockquote {
     margin-top: 20px;
     padding-left: 30px;
     font-style: italic;
+    line-height: 1.4;
 }
 .post > hr {
     margin-top: 40px;
@@ -90,8 +89,6 @@
 @media (min-width: 768px) {
     .post > pre {
         margin: 20px 0 0 0;
-    }
-    .post > pre > code {
         border-radius: 4px;
     }
 }

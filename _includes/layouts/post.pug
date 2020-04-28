@@ -21,7 +21,7 @@ html.light(lang="tr")
         link(href="https://storage.googleapis.com" rel="preconnect")
         link(href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet")
         style
-            include:clean-css ../../css/highlight/monokai-sublime.css
+            include ../../css/prism/prism-tomorrow-night.css
             include:clean-css ../components/header/header.css
             include:clean-css ../components/theme-switcher/theme-switcher.css
             include:clean-css ../components/post/post.css
@@ -35,8 +35,6 @@ html.light(lang="tr")
 
             script
                 include ../../node_modules/lozad/dist/lozad.min.js
-                include ../../js/highlight/highlight.pack.js
                 include:uglify-js:babel ../../js/init-lazyload.js
-                include:uglify-js:babel ../../js/init-highlight.js
                 include:uglify-js:babel ../../js/init-theme-controls.js
                 include:uglify-js:babel ../../js/init-service-worker.js

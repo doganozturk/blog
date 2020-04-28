@@ -41,7 +41,7 @@ Web Components’e dair temel teoriden basitçe bahsettik, daha detaylı bilgi i
 
 Bir Web Component oluşturmak için yapacağımız temel aksiyon son derece basit aslında, ES6 ile hayatımıza giren class syntax’ını kullanarak bir obje yaratıyoruz ve daha sonra platformun bize sağladığı ve `CustomElementRegistry` objesine bir referans döndüren `window.customElements`'in `define()` metodu ile bileşenimizi register etmiş oluyoruz.
 
-```
+``` js
 class  ToolTip  extends  HTMLElement {
 }
 
@@ -50,7 +50,7 @@ customElements.define('zingat-tooltip', ToolTip);
 
 Böylece markup’ımızda kullanabileceğimiz `<zingat-tooltip>` şeklinde bir Web Component'imiz var artık. Bu tooltip'in HTML tarafında herhangi bir yazıyı içine aldığı durumda o yazının sonuna bir yıldız koymasını ve faremin imleci ile bu yıldız üzerinde hover ettiğimde yine benim belirlediğim bir metnin görünür olmasını istiyorum.
 
-```
+``` js
 class  ToolTip  extends  HTMLElement {
 	constructor() {
 		super();
@@ -67,7 +67,7 @@ class  ToolTip  extends  HTMLElement {
 
 Burada `<slot>` kullanımıyla `<zingat-tooltip>` tag'lerinin içine aldığım metni açtığım shadowRoot'un içine koyuyor, metnin sonuna da `<span>` tag'iyle bir yıldız ekliyorum.
 
-```
+``` js
 ...
 
 	render(e) {
@@ -112,7 +112,7 @@ Yine yukarıdaki kod parçacığında Web Component’lere ilişkin bir diğer k
 
 Bir diğer önemli **Lifecycle Callback** de `attributeChangedCallback()`. Bu da Web Components'e _reactivity_ katan bir yapı aslında. Yukarıdaki kodda `this.text` ve `this.bgColor` şeklinde iki property kullanmıştık, bunlar `<zingat-tooltip text="Bu bir tooltip metni!" bg-color="#fff">...` şeklinde kullandığımız bileşenimize dinamik olarak verdiğimiz değerleri örneklemek için kullandığım iki property idi. `attributeChangedCallback()` ile bu _attribute_'ler değiştirildiğinde bileşenin bu durumdan haberdar olması ve buna göre reaksiyon göstermesi sağlanıyor.
 
-```
+``` js
 class ToolTip extends HTMLElement {
 	constructor() {
 		super();
@@ -175,7 +175,7 @@ Yukarıdaki kod bloğunda bu bileşene özgü ( _scoped_) bir CSS yazımı örne
 * * *
 
 <div class="video-wrapper">
-    <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/IGDJyP_-p6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe class="lazy" width="560" height="315" title="Web Components" data-src="https://www.youtube.com/embed/IGDJyP_-p6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 </div>
 

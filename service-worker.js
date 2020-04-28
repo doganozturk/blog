@@ -2,13 +2,6 @@ importScripts('/node_modules/workbox-sw/build/workbox-sw.js');
 
 if (workbox) {
     workbox.routing.registerRoute(
-        /^https:\/\/fonts\.googleapis\.com/,
-        new workbox.strategies.StaleWhileRevalidate({
-            cacheName: 'google-fonts-stylesheets',
-        })
-    );
-
-    workbox.routing.registerRoute(
         /^https:\/\/fonts\.gstatic\.com/,
         new workbox.strategies.CacheFirst({
             cacheName: 'google-fonts-webfonts',

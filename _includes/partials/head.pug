@@ -14,6 +14,15 @@ head
 
     block meta
 
+    script
+        include ../../node_modules/metrics-catalog-js/dist/metrics-catalog.bundle.js
+    script.
+        const metricsCatalog = new MetricsCatalog({
+            host: 'doganozturk.dev'
+        });
+
+        metricsCatalog.init();
+
     block styles
         style
             include:clean-css ../../css/reset.css

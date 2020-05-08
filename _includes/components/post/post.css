@@ -43,7 +43,7 @@
 }
 .post > pre > code {
     font-family: var(--font-family-code);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.4;
 }
 .post p > code {

@@ -1,8 +1,13 @@
 header.header
     a.header-main(href="/")
-        img.avatar(data-src="/public/images/avatar.jpg" class="lazy" alt="Doğan Öztürk")
-        .title
-            p.name Doğan Öztürk
-            p.info Yazılım ve diğer şeyler üzerine kişisel karalamalar
+        if layout === 'home'
+            img.avatar(data-src="/public/images/avatar.jpg" class="lazy" alt="Doğan Öztürk")
+            .title
+                h1.name Doğan Öztürk
+                p.info Yazılım ve diğer şeyler üzerine kişisel karalamalar
+        else if layout === 'post'
+            .back
+                svg(width="15" height="20" viewBox="0 0 50 80")
+                    path(fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M45.63 75.8L.375 38.087 45.63.375")
     include ../../components/theme-switcher/theme-switcher
 

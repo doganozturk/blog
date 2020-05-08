@@ -25,6 +25,14 @@
     margin-top: 10px;
     font-weight: var(--font-weight-light);
 }
+.header > .header-main > .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header > .header-main > .back svg path {
+    stroke: var(--text-color);
+}
 .header > .header-main > .avatar {
     width: var(--avatar-size);
     height: var(--avatar-size);

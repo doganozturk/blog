@@ -24,6 +24,7 @@
         "@11ty/eleventy": "^0.10.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
         "babel-preset-env": "^1.7.0",
+        "date-fns": "^2.13.0",
         "jstransformer-babel": "^2.1.0",
         "jstransformer-clean-css": "^2.1.0",
         "jstransformer-uglify-js": "^1.2.0",

@@ -16,12 +16,7 @@ head
 
     script
         include ../../node_modules/metrics-catalog-js/dist/metrics-catalog.bundle.js
-    script.
-        const metricsCatalog = new MetricsCatalog({
-            host: 'doganozturk.dev'
-        });
-
-        metricsCatalog.init();
+        include:uglify-js:babel ../../js/init-metrics.js
 
     block styles
         style

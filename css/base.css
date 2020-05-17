@@ -8,8 +8,8 @@ body {
 }
 
 a {
-    all: unset;
-    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
 }
 a:hover {
     opacity: 0.8;

@@ -14,9 +14,7 @@ module.exports = function (eleventyConfig) {
        'webmanifest'
     ]);
 
-    eleventyConfig.addFilter('prettyDate', function(value) {
-        return formatDistance(value);
-    });
+    eleventyConfig.addLiquidFilter('prettyDate', formatDistance);
 
     eleventyConfig.addLayoutAlias('home', 'layouts/home.pug');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.pug');

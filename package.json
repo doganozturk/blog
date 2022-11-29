@@ -33,5 +33,8 @@
         "rimraf": "^3.0.2",
         "workbox-sw": "^5.1.2"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "volta": {
+        "node": "12.22.12"
+    }
 }

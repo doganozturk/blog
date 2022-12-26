@@ -1,4 +1,4 @@
-# My Personal Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/bdbb0d4a-06fe-4acd-8117-18e4957cc978/deploy-status)](https://app.netlify.com/sites/doganozturk/deploys)
+# My Personal Blog (Deprecated)
 
 This is my personal blog which I built using [Eleventy](https://www.11ty.dev/) and a host of other small web technologies. The project has very simple setup, I especially like the idea of small CSS & JS footprint, inlining these resources for high [pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=https://doganozturk.dev) performance.
 
